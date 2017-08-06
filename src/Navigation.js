@@ -16,10 +16,10 @@ class Navigation extends Component {
         {
           this.props.elements.map(function(element) {
             if(element == 'profile') {
-              return <li className="profile"><img src={profile}></img></li>
+              return <li key={element} className="profile"><img src={profile}></img></li>
             }
             else {
-              return <li className={element}><FontAwesome name={element} /></li>
+              return <li key={element} className={element}><FontAwesome name={element} /></li>
             }
           })
         }
