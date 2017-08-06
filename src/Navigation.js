@@ -15,8 +15,8 @@ class Navigation extends Component {
       <ul>
         {
           this.props.elements.map(function(element) {
-            if(element == 'profile') {
-              return <li key={element} className="profile"><img src={profile}></img></li>
+            if(element === 'profile') {
+              return <li key={element} className="profile"><img src={profile} alt="profile"></img></li>
             }
             else {
               return <li key={element} className={element}><FontAwesome name={element} /></li>
