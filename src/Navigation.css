@@ -1,0 +1,20 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+li {
+  float: left;
+  color: black;
+  padding: 15px 10px;
+}
+
+li.profile img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}

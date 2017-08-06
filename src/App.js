@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import './TopBar.css';
+import './Navigation.css';
 import TopBar from './TopBar';
 
 class App extends Component {
