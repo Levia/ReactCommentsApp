@@ -3,6 +3,7 @@ import './App.css';
 import './TopBar.css';
 import './Navigation.css';
 import TopBar from './TopBar';
+import MainWindow from './MainWindow';
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
         <TopBar/>
         <div className="upper-body"></div>
         <div className="lower-body"></div>
+        <MainWindow />
       </div>
     )
   }

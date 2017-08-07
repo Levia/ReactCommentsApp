@@ -1,0 +1,9 @@
+.main-window {
+ position: fixed;
+ left: 10%;
+ top: 10%;
+ width: 80%;
+ height: 85%;
+ background: white;
+ z-index: 1;
+}

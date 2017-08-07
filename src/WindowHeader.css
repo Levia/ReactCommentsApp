@@ -1,0 +1,45 @@
+.window-header {
+  background: var(--comments-header-color);
+  height: 12%;
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.username {
+  padding: 3% 20px;
+}
+
+.status .icon {
+  color: var(--main-green-color);
+  font-size: 12px;
+  padding: 0 5px;
+}
+
+.status-text {
+  color: darkgrey;
+  font-size: 12px;
+}
+
+.comments-icon {
+  position: absolute;
+  left: 90%;
+  top: 6%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: var(--main-green-color);
+}
+
+.comments-icon .fa-commenting-o {
+  transform: rotateY(180deg);
+  position: relative;
+  top: 30%;
+  font-size: 25px;
+  color: white;
+}
