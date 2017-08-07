@@ -39,8 +39,8 @@ class CommentsContainer extends Component {
         time: '14.43'
       },
       1: {
-        profile: 'vivi',
-        username: 'Ferdinando',
+        profile: 'mint',
+        username: 'Mint Labs',
         text: 'sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
         time: '14.40'
       },
@@ -51,8 +51,8 @@ class CommentsContainer extends Component {
         time: '14.43'
       },
       3: {
-        profile: 'vivi',
-        username: 'Ferdinando',
+        profile: 'mint',
+        username: 'Mint Labs',
         text: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
         time: '14.45'
       }

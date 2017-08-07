@@ -6,14 +6,17 @@
 .comment-content {
   width: 90%;
   margin: 0 20px;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid var(--light-grey-color);
 }
 
 .comment-username {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: var(--dark-grey-color);
 }
+
+.timestamp { color: var(--medium-grey-color); }
 
 .comment-text {
   text-align: left;

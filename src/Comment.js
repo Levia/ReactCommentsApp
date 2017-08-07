@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './Comment.css';
 
 import vivi from './vivi.jpg';
+import mint from './mintlabs.jpg';
 
 class Comment extends Component {
   constructor(props, context) {
@@ -17,7 +18,8 @@ class Comment extends Component {
 
   render() {
     var profiles = {
-      'vivi': vivi
+      'vivi': vivi,
+      'mint': mint
     }
     return(
       <div className='comment'>
