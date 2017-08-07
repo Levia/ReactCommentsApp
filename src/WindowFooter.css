@@ -1,0 +1,70 @@
+.window-footer {
+  background: var(--comments-header-color);
+  height: 15%;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 3% 0;
+  color: darkgrey;
+}
+
+.add-comment .fa-reply-all {
+  font-size: 18px;
+}
+
+.add-comment input {
+  border: none;
+  background: none;
+  font-size: 16px;
+  margin: 0 15px;
+  width: 500px;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: #BBBBBB;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #BBBBBB;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #BBBBBB;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #BBBBBB;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #BBBBBB;
+}
+
+.add-comment input:focus { outline: none; }
+
+.footer-actions {
+  position: relative;
+  left: 30%;
+}
+
+.footer-actions a {
+  color: grey;
+  text-decoration: none;
+}
+
+.footer-actions  .fa-paperclip {
+  font-size: 18px;
+  transform: rotateY(180deg);
+}
+
+a.send-comment {
+  margin: 0 25px;
+  padding: 13px 28px;
+  color: #EEEEEE;
+  background-color: var(--main-topbar-color);
+  border: 1px solid lightblue;
+  font-size: 14px;
+}
+
+
