@@ -1,4 +1,14 @@
 .comments-container {
-  width: 100%;
+  width: 90%;
   height: 75%;
+  margin: 0 auto;
+}
+
+.date {
+  font-size: 14px;
+  text-align: left;
+  width: 95%;
+  border-bottom: 1px solid lightgrey;
+  padding: 10px 10px 10px 0;
+  opacity: 0.5;
 }

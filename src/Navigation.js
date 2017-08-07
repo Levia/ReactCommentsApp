@@ -10,6 +10,7 @@ class Navigation extends Component {
       elements: this.props.elements
     }
   }
+
   render() {
     return(
       <ul>
