@@ -3,11 +3,18 @@ import React, { Component } from 'react';
 import Comment from './Comment.js';
 
 class CommentsContainer extends Component {
+  constructor(props, context) {
+    super(props, context);
+    this.state = {
+      comments: this.loadComments()
+    }
+  }
+
   render() {
     return(
       <div className="comments-container">
         <div className='date'>7 August 2017</div>
-        { this.loadComments() }
+        { this.state.comments }
       </div>
     )
   }
@@ -34,7 +41,7 @@ class CommentsContainer extends Component {
     return {
       0: {
         profile: 'vivi',
-        username: 'Ferdinando',
+        username: 'Ferdinando Primerano',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
         time: '14.43'
       },
@@ -46,7 +53,7 @@ class CommentsContainer extends Component {
       },
       2: {
         profile: 'vivi',
-        username: 'Ferdinando',
+        username: 'Ferdinando Primerano',
         text: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur',
         time: '14.43'
       },
