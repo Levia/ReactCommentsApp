@@ -14,3 +14,7 @@ body {
   --dark-grey-color: #525252;
   --light-grey-color: #EAEAEA;
 }
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+}

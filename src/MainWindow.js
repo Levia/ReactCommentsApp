@@ -23,6 +23,11 @@ class MainWindow extends Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
+  componentDidUpdate() {
+    var container = $('.comments-container');
+    container.scrollTop(container.prop('scrollHeight'));
+  }
+
   render() {
     return(
       <div className="main-window">
