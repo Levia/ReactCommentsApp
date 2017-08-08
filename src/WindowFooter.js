@@ -9,11 +9,11 @@ class WindowFooter extends Component {
         <div className='footer-content'>
           <div className='add-comment'>
             <FontAwesome name='reply-all' />
-            <input type='text' placeholder='Start typing your message or drop file...'/>
+            <input id='new_comment' type='text' placeholder='Start typing your message or drop file...'/>
           </div>
           <div className='footer-actions'>
             <a href='#'><FontAwesome name='paperclip' /></a>
-            <a href='#' className='send-comment'>SEND</a>
+            <a href='#' className='send-comment' onClick={this.props.addComment}>SEND</a>
           </div>
         </div>
       </div>
