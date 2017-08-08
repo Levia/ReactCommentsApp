@@ -41,10 +41,11 @@ class MainWindow extends Component {
       text: $('#new_comment').val(),
       time: currentDate.getHours() + '.' + currentDate.getMinutes()
     }
-    comments.push(new_comment)
+    comments.push(new_comment);
+    $('#new_comment').val('');
     this.setState({
       comments: comments
-    })
+    });
   }
 
   getComments() {
