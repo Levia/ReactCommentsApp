@@ -19,6 +19,16 @@
 
 .timestamp { color: var(--medium-grey-color); }
 
+.text-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-container .fa-pencil {
+  font-size: 14px;
+}
+
 .comment-text {
   text-align: left;
 }

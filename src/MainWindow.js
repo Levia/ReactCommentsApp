@@ -51,6 +51,7 @@ class MainWindow extends Component {
       profile: 'vivi',
       username: 'Ferdinando Primerano',
       text: 'Typing...',
+      timestamp: currentDate.getTime(),
       time: currentDate.getHours() + '.' + currentDate.getMinutes()
     }
     this.submitComment(new_comment);
@@ -102,6 +103,7 @@ class MainWindow extends Component {
       profile: 'vivi',
       username: 'Ferdinando Primerano',
       text: $('#new_comment').val(),
+      timestamp: currentDate.getTime(),
       time: currentDate.getHours() + '.' + currentDate.getMinutes()
     }
     this.submitComment(new_comment);
@@ -122,24 +124,28 @@ class MainWindow extends Component {
         profile: 'vivi',
         username: 'Ferdinando Primerano',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+        timestamp: '',
         time: '14.43'
       },
       {
         profile: 'mint',
         username: 'Mint Labs',
         text: 'sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+        timestamp: '',
         time: '14.40'
       },
       {
         profile: 'vivi',
         username: 'Ferdinando Primerano',
         text: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur',
+        timestamp: '',
         time: '14.43'
       },
       {
         profile: 'mint',
         username: 'Mint Labs',
         text: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
+        timestamp: '',
         time: '14.45'
       }
     ]
