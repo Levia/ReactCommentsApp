@@ -9,7 +9,7 @@ class WindowFooter extends Component {
         <div className='footer-content'>
           <div className='add-comment'>
             <FontAwesome name='reply-all' />
-            <input id='new_comment' type='text' placeholder='Start typing your message or drop file...'/>
+            <input id='new_comment' type='text' placeholder='Start typing your message or drop file...' onChange={this.props.handleChange}/>
           </div>
           <div className='footer-actions'>
             <a href='#'><FontAwesome name='paperclip' /></a>

@@ -20,6 +20,7 @@ class MainWindow extends Component {
     }
 
     this.addComment = this.addComment.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
   render() {
@@ -27,13 +28,57 @@ class MainWindow extends Component {
       <div className="main-window">
         <WindowHeader />
         <CommentsContainer comments={this.state.comments} />
-        <WindowFooter addComment={this.addComment} />
+        <WindowFooter addComment={this.addComment} handleChange={this.handleChange} />
       </div>
     )
   }
 
-  addComment() {
+  handleChange() {
+    if($('#new_comment').val() === '') {
+      this.removeComment();
+      return
+    }
+    if(this.isAlreadyTyping()) {
+      return
+    }
+    var currentDate = new Date();
+    var new_comment = {
+      profile: 'vivi',
+      username: 'Ferdinando Primerano',
+      text: 'Typing...',
+      time: currentDate.getHours() + '.' + currentDate.getMinutes()
+    }
+    this.submitComment(new_comment);
+  }
+
+  isAlreadyTyping() {
     var comments = this.state.comments;
+    for(var i =0; i < comments.length; i++) {
+      var comment = comments[i];
+      if(comment.username === 'Ferdinando Primerano' &&
+          comment.text === 'Typing...') {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  removeComment() {
+    var comments = this.state.comments;
+    for(var i =0; i < comments.length; i++) {
+      var comment = comments[i];
+      if(comment.username === 'Ferdinando Primerano' &&
+          comment.text === 'Typing...') {
+        comments.splice(i, 1);
+        this.setState({
+          comments: comments
+        });
+        return;
+      }
+    }
+  }
+
+  addComment() {
     var currentDate = new Date();
     var new_comment = {
       profile: 'vivi',
@@ -41,8 +86,13 @@ class MainWindow extends Component {
       text: $('#new_comment').val(),
       time: currentDate.getHours() + '.' + currentDate.getMinutes()
     }
-    comments.push(new_comment);
+    this.submitComment(new_comment);
     $('#new_comment').val('');
+  }
+
+  submitComment(new_comment) {
+    var comments = this.state.comments;
+    comments.push(new_comment);
     this.setState({
       comments: comments
     });
