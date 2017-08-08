@@ -25,7 +25,7 @@ class CommentsContainer extends Component {
     comments.map(function(comment, index) {
       comment_elements.push(
         <Comment
-          key={index}
+          key={index+comment.text+comment.time}
           profile={comment.profile}
           username={comment.username}
           text={comment.text}

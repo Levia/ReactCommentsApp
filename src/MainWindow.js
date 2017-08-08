@@ -78,6 +78,19 @@ class MainWindow extends Component {
     }
   }
 
+  spliceTypingComment() {
+    var comments = this.state.comments;
+    for(var i =0; i < comments.length; i++) {
+      var comment = comments[i];
+      if(comment.username === 'Ferdinando Primerano' &&
+          comment.text === 'Typing...') {
+        comments.splice(i, 1);
+        return comments;
+      }
+    }
+    return comments;
+  }
+
   addComment() {
     var currentDate = new Date();
     var new_comment = {
@@ -91,7 +104,7 @@ class MainWindow extends Component {
   }
 
   submitComment(new_comment) {
-    var comments = this.state.comments;
+    var comments = this.spliceTypingComment();
     comments.push(new_comment);
     this.setState({
       comments: comments
