@@ -13,7 +13,8 @@ class WindowFooter extends Component {
           </div>
           <div className='footer-actions'>
             <a href='#'><FontAwesome name='paperclip' /></a>
-            <a href='#' className='send-comment' onClick={this.props.addComment}>SEND</a>
+            {/* #! prevents to go on top of the page after click */}
+            <a href='#!' className='send-comment' onClick={this.props.addComment}>SEND</a>
           </div>
         </div>
       </div>
